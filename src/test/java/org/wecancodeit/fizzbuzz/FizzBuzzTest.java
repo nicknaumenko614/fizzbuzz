@@ -5,10 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
-    @Test
-    public void createFizzBuzzClass() {
-        FizzBuzz underTest = new FizzBuzz();
-    }
+
 
     @Test
     public void oneShouldSay1() {
@@ -50,6 +47,13 @@ public class FizzBuzzTest {
         FizzBuzz underTest = new FizzBuzz();
         String result = underTest.say(12);
         assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void fifteenShouldSayFizzBuzz(){
+        FizzBuzz underTest = new FizzBuzz();
+        String result = underTest.say(15);
+        assertEquals("FizzBuzz", result);
     }
 
     @Test
